@@ -10,6 +10,7 @@ data = {
 }
 df = pd.DataFrame(data)
 
+
 mean_A=df["A"].mean()
 std_A=df["A"].std()
 print(mean_A-std_A,"~",mean_A+std_A) #平均±標準偏差は68%のデータを含む範囲
