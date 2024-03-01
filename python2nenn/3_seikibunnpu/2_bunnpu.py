@@ -20,7 +20,7 @@ std_B=df["B"].std()
 print(mean_B-std_B,"~",mean_B+std_B) #平均±標準偏差は68%のデータを含む範囲
 
 df.plot.scatter(x="ID",y="A",color="blue",ylim=(0,100),figsize=(8,8))
-plt.axhline(y=mean_A-std_A,color="red",linestyle="--")
+plt.axhline(y=mean_A-std_A,color="red",linestyle="--") #axvlineはx軸に線を引く axhlineはy軸に線を引く
 plt.axhline(y=mean_A+std_A,color="blue",linestyle="--")
 plt.title("Aの散布図",fontsize=20)
 plt.show()

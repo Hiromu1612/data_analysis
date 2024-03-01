@@ -2,7 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sns.set(font=["Meiryo","Yu Gothic","Hiragino Maru Gothic Pro"],style="whitegrid")#日本語フォントを指定
+sns.set(style="whitegrid")
+import japanize_matplotlib
 data={
     "A":[1,10,1,10,1,10,1,10],
     "B":[5,5,5,5,6,6,6,6],

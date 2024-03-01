@@ -14,6 +14,8 @@ print("数学と理科の相関係数",df.corr()["数学"]["理科"]) #0.96で�
 print("数学と社会の相関係数",df.corr()["数学"]["社会"]) #0.39で弱い正の相関
 print(df.corr()) #列名の指定がいないと相関係数行列を表示 corrはcorrelation(相関)の略
 
+
+#!regで回帰直線と信頼区間を表示
 df.plot.scatter(x="数学",y="理科",color="blue",label="数学と理科")
 sns.regplot(data=df,x="数学",y="理科",line_kws={"color":"red"}) #回帰直線を表示 誤差が一番少なくなる直線 regplotはregression(回帰) plot kwsはkeyword arguments
 plt.title("数学と理科の相関", fontsize=20) #薄い赤い範囲は信頼区間(95%の確率でこの範囲に含まれる) 信頼区間が広いと信頼性が低い
