@@ -1,0 +1,13 @@
+pandasで表示できるグラフ
+・折れ線グラフ
+    df.plot()
+・棒グラフ
+    df.plot.bar()
+・ヒストグラム
+    df.hist()
+・円グラフ
+    df.plot.pie()
+・散布図
+    df.plot.scatter(x="横軸の列名", y="縦軸の列名")
+・箱ひげ図
+    df.plot.box()
